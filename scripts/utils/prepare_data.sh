@@ -1,3 +1,7 @@
 #!/bin/bash
-python make_hdf5.py --dataset I128 --batch_size 256 --data_root data
-python calculate_inception_moments.py --dataset I128_hdf5 --data_root data
+
+dataset_abbr=$1
+dataset_hdf5=$2
+
+python make_hdf5.py --dataset "$1" --batch_size 256
+python calculate_inception_moments.py --dataset "$2"

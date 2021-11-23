@@ -1,1 +1,8 @@
 
+checkpoints/
+pyproject.toml
+poetry.lock
+__pycache__/
+*.npz
+data/
+logs/
